@@ -4,7 +4,9 @@ files:
   - source: html/
     destination: /usr/share/nginx/html
     overwrite: true
-
+  - source: css/
+    destination: /usr/share/nginx/html/css
+    overwrite: true
 hooks:
   BeforeInstall:
     - location: scripts/before_install.sh

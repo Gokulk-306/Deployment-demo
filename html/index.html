@@ -1,72 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Deployed via CodePipeline</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: "Segoe UI", system-ui, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      color: #fff;
-      text-align: center;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    h1 {
-      font-size: 2rem;
-      margin: 0.5rem 0;
-      animation: fadeIn 1.5s ease-in-out;
-    }
-    p {
-      margin-top: 1.5rem;
-      font-size: 1.1rem;
-    }
-    #ts {
-      font-weight: bold;
-      color: #ffd700;
-    }
-    .card {
-      background: rgba(255,255,255,0.1);
-      padding: 2rem;
-      border-radius: 15px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-      max-width: 600px;
-    }
-    .btn {
-      margin-top: 2rem;
-      padding: 0.8rem 1.5rem;
-      border: none;
-      border-radius: 8px;
-      background: #ffd700;
-      color: #000;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-    .btn:hover {
-      background: #ffeb3b;
-      transform: scale(1.05);
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+  <title>Deployed via CodePipeline</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="card">
-    <h1>🚀 Hello from AWS CodePipeline</h1>
-    <h1>✅ Deployment Successful!</h1>
-    <h1>🌟 HTML Page Upgraded</h1>
-    <p>Deployed at: <span id="ts"></span></p>
-    <button class="btn" onclick="refreshPage()">🔄 Refresh Deployment</button>
-  </div>
+  <header>
+    <h1>🚀 AWS CodePipeline Demo</h1>
+    <p class="subtitle">Built with CodeBuild + CodeDeploy</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>✅ Deployment Successful!</h2>
+      <p>Deployed at: <span id="ts"></span></p>
+      <button class="btn" onclick="refreshPage()">🔄 Refresh Deployment</button>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <h3>💻 Automated CI/CD</h3>
+        <p>Your code automatically builds, tests, and deploys.</p>
+      </div>
+      <div class="feature">
+        <h3>🌟 Responsive Design</h3>
+        <p>Looks great on desktop, tablet, and mobile devices.</p>
+      </div>
+      <div class="feature">
+        <h3>⚡ Fast & Modern</h3>
+        <p>Using HTML5, CSS3, and lightweight animations.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Deployed with ❤️ by AWS CodePipeline Demo</p>
+  </footer>
 
   <script>
     document.getElementById('ts').textContent = new Date().toLocaleString();
