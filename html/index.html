@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deployed via CodePipeline</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🚀 CodePipeline Deployment</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>🚀 AWS CodePipeline Demo</h1>
-    <p class="subtitle">Built with CodeBuild + CodeDeploy</p>
+    <h1>🚀 AWS CodePipeline Deployment</h1>
+    <p class="subtitle">Powered by CodeBuild & CodeDeploy</p>
   </header>
 
   <main>
-    <div class="card">
-      <h2>✅ Deployment Successful!</h2>
-      <p>Deployed at: <span id="ts"></span></p>
-      <button class="btn" onclick="refreshPage()">🔄 Refresh Deployment</button>
-    </div>
+    <section class="card">
+      <h2>🎉 Deployment Successful!</h2>
+      <p>Timestamp: <span id="ts"></span></p>
+      <button class="btn" onclick="refreshPage()">🔄 Refresh</button>
+    </section>
 
-    <div class="features">
+    <section class="features">
       <div class="feature">
-        <h3>💻 Automated CI/CD</h3>
-        <p>Your code automatically builds, tests, and deploys.</p>
+        <h3>🔧 CI/CD Automation</h3>
+        <p>Build, test, and deploy with zero manual steps.</p>
       </div>
       <div class="feature">
-        <h3>🌟 Responsive Design</h3>
-        <p>Looks great on desktop, tablet, and mobile devices.</p>
+        <h3>📱 Responsive UI</h3>
+        <p>Optimized for all screen sizes and devices.</p>
       </div>
       <div class="feature">
-        <h3>⚡ Fast & Modern</h3>
-        <p>Using HTML5, CSS3, and lightweight animations.</p>
+        <h3>🚀 Modern Tech Stack</h3>
+        <p>Built with HTML5, CSS3, and smooth animations.</p>
       </div>
-    </div>
+    </section>
   </main>
 
   <footer>
-    <p>Deployed with ❤️ by AWS CodePipeline Demo</p>
+    <p>Made with ❤️ using AWS CodePipeline</p>
   </footer>
 
   <script>
-    document.getElementById('ts').textContent = new Date().toLocaleString();
+    document.getElementById("ts").textContent = new Date().toLocaleString();
     function refreshPage() {
       location.reload();
     }
